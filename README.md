@@ -1,0 +1,85 @@
+# Trader Sentiment Analysis
+
+This project performs a comprehensive analysis of trader sentiments and closed PnL (Profit and Loss) for various cryptocurrencies. The analysis provides insights into trading behavior, market trends, and sentiment-driven performance.
+
+---
+
+## Features
+
+- **Trader Sentiment Distribution**  
+  Visualizes the distribution of trader sentiment (Bullish, Bearish, Neutral) across all trades using bar charts.
+
+- **Coin-wise Closed PnL Analysis**  
+  Calculates mean, total, and count of closed PnL for each coin and visualizes it using boxplots.
+
+- **Sentiment-wise Closed PnL Analysis**  
+  Compares closed PnL across trader sentiments, with summary statistics and boxplots for clear insights.
+
+- **Optional Market Sentiment Analysis**  
+  If the dataset contains a `classification` column (e.g., Fear/Greed), it provides analysis and visualizations of closed PnL vs market sentiment.
+
+- **Automatic Saving of Results**  
+  All summaries are saved as CSV files, and all plots are saved as PNG images for reference.
+
+---
+
+## Project Structure
+
+Trader-Sentiment-Analysis/
+│
+├── final_sentiment_output.csv # Input dataset
+├── insights_combined.py # Analysis script
+├── Coinwise_Closed_PnL_Summary.csv # Coin-wise summary output
+├── Sentimentwise_Closed_PnL_Summary.csv
+├── Market_Classification_Closed_PnL.csv
+├── Trader_Sentiment_Distribution.png
+├── Coinwise_Closed_PnL_Boxplot.png
+├── Sentimentwise_Closed_PnL_Boxplot.png
+└── Market_Classification_Boxplot.png
+
+yaml
+Copy code
+
+---
+
+## Requirements
+
+- Python 3.x  
+- pandas  
+- matplotlib  
+- seaborn  
+
+Install the required packages with:
+
+```bash
+pip install pandas matplotlib seaborn
+How to Run
+Run the analysis script from the project directory:
+
+bash
+Copy code
+py insights_combined.py
+Steps performed by the script:
+
+Loads the CSV dataset.
+
+Generates summary tables for trader sentiment, coin-wise PnL, and optional market sentiment.
+
+Creates visualizations for each summary.
+
+Saves all summaries as CSV files and plots as PNG images.
+
+Note:
+
+Coin-wise boxplots may appear congested if there are many coins.
+
+Plots are displayed sequentially; close the current plot window to view the next.
+
+Optional analysis runs only if the classification column exists in the dataset.
+
+Author
+Parul Gautam
+GitHub: https://github.com/Parul-studio
+
+pgsql
+Copy code
