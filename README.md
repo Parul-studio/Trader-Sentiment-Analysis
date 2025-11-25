@@ -23,24 +23,6 @@ This project performs a comprehensive analysis of trader sentiments and closed P
 
 ---
 
-## Project Structure
-
-Trader-Sentiment-Analysis/
-│
-├── final_sentiment_output.csv # Input dataset
-├── insights_combined.py # Analysis script
-├── Coinwise_Closed_PnL_Summary.csv # Coin-wise summary output
-├── Sentimentwise_Closed_PnL_Summary.csv
-├── Market_Classification_Closed_PnL.csv
-├── Trader_Sentiment_Distribution.png
-├── Coinwise_Closed_PnL_Boxplot.png
-├── Sentimentwise_Closed_PnL_Boxplot.png
-└── Market_Classification_Boxplot.png
-
-yaml
-Copy code
-
----
 
 ## Requirements
 
@@ -51,13 +33,12 @@ Copy code
 
 Install the required packages with:
 
-```bash
+
 pip install pandas matplotlib seaborn
 How to Run
 Run the analysis script from the project directory:
 
-bash
-Copy code
+
 py insights_combined.py
 Steps performed by the script:
 
@@ -81,5 +62,4 @@ Author
 Parul Gautam
 GitHub: https://github.com/Parul-studio
 
-pgsql
-Copy code
+
